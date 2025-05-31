@@ -1,4 +1,33 @@
 return {
+    { "echasnovski/mini.nvim", version = "*" },
+    { "nvim-tree/nvim-web-devicons", opts = {} },
+    {
+        "craftzdog/solarized-osaka.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = function()
+            return {
+                transparent = true,
+            }
+        end,
+        config = function()
+            vim.cmd([[colorscheme solarized-osaka]])
+        end,
+    },
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        opts = {},
+        keys = {
+            {
+                "<leader>?",
+                function()
+                    require("which-key").show({ global = false })
+                end,
+                desc =  "Buffer Local Keymaps (which-key)",
+            },
+        }
+    },
     -- File explorer
     {
         "nvim-neo-tree/neo-tree.nvim",
