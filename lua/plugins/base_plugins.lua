@@ -96,8 +96,6 @@ return {
             },
         },
     },
-    -- Language integration
-    { "neovim/nvim-lspconfig" },
     -- Autocompletion
     {
         "hrsh7th/nvim-cmp",
