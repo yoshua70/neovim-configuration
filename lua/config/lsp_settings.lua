@@ -1,6 +1,11 @@
+-- Language servers
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("clangd")
+vim.lsp.enable("pylsp")
 
+-- vim.lsp.config("pyls")
+
+-- Lsp keymaps
 vim.api.nvim_create_autocmd("LspAttach", {
     group = vim.api.nvim_create_augroup("UserLspConfig", {}),
     callback = function(event)
@@ -10,9 +15,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
                 "n",
                 keys,
                 func,
-                { 
+                {
                     buffer = event.buf,
-                    desc = "Lsp: " .. desc 
+                    desc = "Lsp: " .. desc,
                 }
             )
         end
