@@ -1,5 +1,5 @@
 return {
-    { "echasnovski/mini.nvim", version = "*" },
+    { "echasnovski/mini.nvim",       version = "*" },
     { "nvim-tree/nvim-web-devicons", opts = {} },
     -- Colorscheme
     {
@@ -45,7 +45,7 @@ return {
                 function()
                     require("which-key").show({ global = false })
                 end,
-                desc =  "Buffer Local Keymaps (which-key)",
+                desc = "Buffer Local Keymaps (which-key)",
             },
         }
     },
@@ -66,7 +66,7 @@ return {
         },
         opts = {
             window = {
-                position =  "right",
+                position = "right",
             },
         },
     },
