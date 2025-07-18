@@ -1,4 +1,6 @@
 -- Lazy.nvim plugin manager setup.
-require("config.lazy")
+require("core.lazy")
+-- Lsp.
+require("core.lsp")
 -- Bare minimum configuration. Does not rely on any plugins.
-require("config.bare")
+require("config.options")
