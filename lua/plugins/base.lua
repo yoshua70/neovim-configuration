@@ -23,14 +23,6 @@ return {
         "echasnovski/mini.icons", version = "*"
     },
     {
-        "rebelot/kanagawa.nvim",
-        priority = 1000,
-        lazy = false,
-        init = function()
-            vim.cmd("colorscheme kanagawa")
-        end,
-    },
-    {
         "nvim-telescope/telescope.nvim",
         tag = "0.1.8",
         dependencies = {
